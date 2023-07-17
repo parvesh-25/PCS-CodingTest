@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orange: '#E3422D',
+                        purple: '#B52B5E',
+                        grey:'#A0A09F'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        footer{
+            box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="w-screen  h-[50px] flex flex-row items-center px-[1rem] justify-between">
+        <p class="brand text-orange text-xl font-semibold">KerjaYuk!</p>
+       <a href="/notif.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+            d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17ZM10 21C10 22.1 10.9 23 12 23C13.1 23 14 22.1 14 21H10ZM21 6.5C21 8.4 19.4 10 17.5 10C15.6 10 14 8.4 14 6.5C14 4.6 15.6 3 17.5 3C19.4 3 21 4.6 21 6.5Z"
+            fill="black" />
+        <circle cx="18" cy="6" r="4" fill="#E3422D" />
+    </svg></a>
+    </nav>
+    <!-- user section -->
+    <section class="user w-screen px-[1rem] gap-[12px] py-[12px] flex flex-col  items-start">
+        <p class="text-sm text-start">Hi, Good Morning!</p>
+        <!-- user card -->
+        <div class="card w-full rounded-lg   bg-gradient-to-r from-orange to-purple p-[12px] gap-[12px] flex flex-col">
+            <div class="top w-full  gap-[15px] flex flex-row ">
+                <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover">
+
+                <div class="container  flex flex-row w-full justify-between">
+                    <div class="flex flex-col items-start">
+                        <p class="text-sm text-white font-semibold">Tabay</p>
+                        <p class="text-xs opacity-50 text-white font-light">UI/UX Designer</p>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <p class="text-xs opacity-50 text-white font-light">Member Since</p>
+                        <p class="text-sm text-white font-semibold">01 Juni 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom  flex flex-row justify-between items-end">
+                <div class="location flex flex-col items-start">
+                    <p class="text-xs opacity-50 text-white font-light">Location</p>
+                    <p class="text-sm text-white font-semibold">Kantor Sahid</p>
+                </div>
+                <p class="text-xs text-white opacity-50 italic ">ICO</p>
+            </div>
+        </div>
+    </section>
+    <!-- Activity -->
+
+    <section class="activity flex flex-col gap-[12px] py-[12px] px-[1rem] w-full">
+        <p class="text-base  font-semibold text-black">Today's Activity</p>
+        <div class="w-full flex flex-row  justify-around">
+            <!-- check in -->
+            <div class="flex flex-col items-center bg-white justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g fill="none" stroke="#e3422d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M11 8v5h5" />
+                    </g>
+                </svg>
+                <p class="text-sm text-black font-semibold">08:30</p>
+                <p class="text-xs font-light text-black">Check In</p>
+            </div>
+            <!-- Hours -->
+            <div class="flex flex-col items-center bg-white justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_701_9)">
+                        <path
+                            d="M0.000244141 9.99356C0.000244141 4.99731 4.0652 0.932617 9.06145 0.932617C13.7577 0.932617 17.6852 4.55168 18.0868 9.20543L18.9961 7.41137C19.1177 7.18981 19.3911 7.05793 19.6071 7.18918L19.7711 7.25262C19.9871 7.38449 20.0636 7.67012 19.9427 7.89104L18.4095 10.8854C18.407 10.8892 18.4077 10.8932 18.4052 10.897L18.2952 11.0979C18.2342 11.2089 18.1346 11.2823 18.0236 11.3117C17.9127 11.3423 17.7893 11.3283 17.6818 11.2623L17.4865 11.1432C17.4827 11.1414 17.4802 11.1376 17.4768 11.1354L14.5868 9.28604C14.3708 9.15479 14.2943 8.86981 14.4152 8.64762L14.5165 8.50231C14.6374 8.28074 14.9499 8.26606 15.1652 8.39731L16.858 9.48856C16.8577 9.48262 16.8555 9.47731 16.8552 9.47166C16.5871 5.38416 13.1631 2.1826 9.06149 2.1826C4.75431 2.18262 1.25024 5.68666 1.25024 9.99356C1.25024 14.3011 4.75431 17.8248 9.06151 17.8248C11.5415 17.8248 13.8193 16.6857 15.3109 14.6998C15.5184 14.4239 15.9103 14.3683 16.1862 14.5755C16.4628 14.783 16.5178 15.1748 16.3106 15.4508C14.5803 17.7542 11.9381 19.0751 9.06153 19.0751C4.06526 19.0748 0.000244141 14.9901 0.000244141 9.99356Z"
+                            fill="#E3422D" />
+                        <path
+                            d="M8.87784 14.1193C8.24432 14.1193 7.68182 14.0128 7.19034 13.7997C6.7017 13.5866 6.31818 13.2955 6.03977 12.9261C5.7642 12.554 5.62784 12.1321 5.63068 11.6605C5.62784 11.294 5.70739 10.9574 5.86932 10.6506C6.03125 10.3438 6.25 10.0881 6.52557 9.88352C6.80398 9.67614 7.11364 9.54403 7.45455 9.48722V9.42756C7.00568 9.32812 6.64205 9.09943 6.36364 8.74148C6.08807 8.38068 5.9517 7.96449 5.95455 7.4929C5.9517 7.04403 6.0767 6.64347 6.32955 6.29119C6.58239 5.93892 6.92898 5.66193 7.36932 5.46023C7.80966 5.25568 8.3125 5.15341 8.87784 5.15341C9.4375 5.15341 9.93608 5.25568 10.3736 5.46023C10.8139 5.66193 11.1605 5.93892 11.4134 6.29119C11.669 6.64347 11.7969 7.04403 11.7969 7.4929C11.7969 7.96449 11.6562 8.38068 11.375 8.74148C11.0966 9.09943 10.7372 9.32812 10.2969 9.42756V9.48722C10.6378 9.54403 10.9446 9.67614 11.2173 9.88352C11.4929 10.0881 11.7116 10.3438 11.8736 10.6506C12.0384 10.9574 12.1207 11.294 12.1207 11.6605C12.1207 12.1321 11.9815 12.554 11.7031 12.9261C11.4247 13.2955 11.0412 13.5866 10.5526 13.7997C10.0668 14.0128 9.50852 14.1193 8.87784 14.1193ZM8.87784 12.9006C9.20455 12.9006 9.48864 12.8452 9.73011 12.7344C9.97159 12.6207 10.1591 12.4616 10.2926 12.2571C10.4261 12.0526 10.4943 11.8168 10.4972 11.5497C10.4943 11.2713 10.4219 11.0256 10.2798 10.8125C10.1406 10.5966 9.94886 10.4276 9.70455 10.3054C9.46307 10.1832 9.1875 10.1222 8.87784 10.1222C8.56534 10.1222 8.28693 10.1832 8.04261 10.3054C7.7983 10.4276 7.60511 10.5966 7.46307 10.8125C7.32386 11.0256 7.25568 11.2713 7.25852 11.5497C7.25568 11.8168 7.32102 12.0526 7.45455 12.2571C7.58807 12.4588 7.77557 12.6165 8.01705 12.7301C8.26136 12.8437 8.5483 12.9006 8.87784 12.9006ZM8.87784 8.92472C9.14489 8.92472 9.38068 8.87074 9.58523 8.76278C9.79261 8.65483 9.95597 8.50426 10.0753 8.31108C10.1946 8.1179 10.2557 7.89489 10.2585 7.64205C10.2557 7.39205 10.196 7.1733 10.0795 6.9858C9.96307 6.79545 9.80114 6.64915 9.59375 6.54688C9.38636 6.44176 9.14773 6.3892 8.87784 6.3892C8.60227 6.3892 8.35938 6.44176 8.14915 6.54688C7.94176 6.64915 7.77983 6.79545 7.66335 6.9858C7.54972 7.1733 7.49432 7.39205 7.49716 7.64205C7.49432 7.89489 7.55114 8.1179 7.66761 8.31108C7.78693 8.50142 7.95028 8.65199 8.15767 8.76278C8.3679 8.87074 8.60795 8.92472 8.87784 8.92472Z"
+                            fill="#E3422D" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_701_9">
+                            <rect width="20" height="20" fill="white" transform="matrix(0 -1 -1 0 20 20)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p class="text-sm text-orange font-semibold">03:00:00</p>
+                <p class="text-xs font-light text-black">Working Hours</p>
+            </div>
+            <!-- check out -->
+            <div class="flex flex-col items-center bg-white justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.4" stroke="#E3422D" stroke-width="1.2" />
+                    <line x1="9.5" y1="3" x2="9.5" y2="17" stroke="#E3422D" />
+                    <rect x="8" y="9" width="3" height="2" rx="1" fill="#E3422D" />
+                </svg>
+                <p class="text-sm text-black font-semibold">--:--</p>
+                <p class="text-xs font-light text-black">Check Out</p>
+            </div>
+        </div>
+    </section>
+    <!-- news -->
+    <section class="activity flex flex-col gap-[12px] py-[12px]  w-full">
+        <p class="text-base px-[1rem]  font-semibold text-black">PCS News</p>
+        <div class="swiper w-full ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide  flex justify-center pb-[2rem] max-w-[80vw] mx-[1rem]">
+                    <div class="card drop-shadow-lg flex flex-col bg-white rounded-lg p-[12px]">
+                        <div class="top  gap-[12px]  flex flex-row ">
+                            <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                                alt="" class="rounded-full h-[45px] w-[45px] object-cover">
+
+                            <div class="container  flex flex-row w-full justify-between items-center">
+                                <p class="text-sm text-orange font-semibold">Anna Riswati</p>
+                                <div class="flex flex-col items-end">
+                                    <p class="text-xs  text-black ">senin</p>
+                                    <p class="text-xs text-black ">30 Mei 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full  mt-[1rem] flex flex-col justify-end">
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide  flex justify-center pb-[2rem] max-w-[80vw] mx-[1rem]">
+                    <div class="card drop-shadow-lg flex flex-col bg-white rounded-lg p-[12px]">
+                        <div class="top  gap-[12px]  flex flex-row ">
+                            <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                                alt="" class="rounded-full h-[45px] w-[45px] object-cover">
+
+                            <div class="container  flex flex-row w-full justify-between items-center">
+                                <p class="text-sm text-orange font-semibold">Anna Riswati</p>
+                                <div class="flex flex-col items-end">
+                                    <p class="text-xs  text-black ">senin</p>
+                                    <p class="text-xs text-black ">30 Mei 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full  mt-[1rem] flex flex-col justify-end">
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide  flex justify-center pb-[2rem] max-w-[80vw] mx-[1rem]">
+                    <div class="card drop-shadow-lg flex flex-col bg-white rounded-lg p-[12px]">
+                        <div class="top gap-[12px]   flex flex-row ">
+                            <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                                alt="" class="rounded-full h-[45px] w-[45px] object-cover">
+
+                            <div class="container  flex flex-row w-full justify-between items-center">
+                                <p class="text-sm text-orange font-semibold">Anna Riswati</p>
+                                <div class="flex flex-col items-end">
+                                    <p class="text-xs  text-black ">senin</p>
+                                    <p class="text-xs text-black ">30 Mei 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full  mt-[1rem] flex flex-col justify-end">
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!-- online -->
+    <section class="activity flex flex-col gap-[12px] px-[1rem]  py-[12px]  w-full mb-[5rem]">
+        <p class="text-base  font-semibold text-black">Online</p>
+        <div class="card w-full rounded-lg shadow-lg  p-[12px] gap-[12px] flex flex-row">
+            <!-- online user -->
+            <div class="flex flex-col items-center ]">
+                <img src="https://images.unsplash.com/photo-1572965733194-784e4b4efa45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Jefrii
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px]">
+                <img src="https://images.unsplash.com/photo-1529111290557-82f6d5c6cf85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=786&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Nisa
+                </p>
+                <p class="text-[10px] text-black font-light">BSD</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px]">
+                <img src="https://images.unsplash.com/photo-1521132293557-5b908a59d1e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Sam
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px]">
+                <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Aldo
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px]">
+                <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Erwin
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px]">
+                <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2230&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Arye
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+            <div class="flex flex-col items-center ml-[-19px] z-10">
+                <img src="https://images.unsplash.com/photo-1541290431335-1f4c2152e899?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                    alt="" class="rounded-full h-[45px] w-[45px] object-cover border-white border">
+                <p class="text-xs text-black font-semibold">
+                    Malik
+                </p>
+                <p class="text-[10px] text-black font-light">Sahid</p>
+            </div>
+
+
+            <!-- 10 more -->
+            <div
+                class="flex flex-col h-[45px] w-[45px] rounded-full items-center bg-purple justify-center bg-gradient-to-r from-orange to-purple ml-[-19px]">
+                <p class="text-xs text-white">10</p>
+                <p class="text-xs text-white">more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full  px-[1rem] bg-white py-[12px] flex flex-row justify-between items-end  max-h-[60px]  fixed bottom-0 z-50 ">
+        <div class="flex flex-row w-[30vw] gap-[10px] justify-between items-center">
+            <a href="#" class="flex flex-col items-center">
+                <iconify-icon icon="ion:home" style="color: #e3422d;"></iconify-icon>
+                <p class="text-xs text-orange font-semibold">Home</p>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+                <iconify-icon icon="solar:calendar-linear" style="color: #a0a09f;"></iconify-icon>
+                <p class="text-xs text-grey font-light">Attendence</p>
+            </a>
+        </div>
+        
+        <!-- check out  -->
+        <a href="#" class="flex flex-col items-center">
+            <div class=" w-[50px] h-[50px] bg-orange rounded-full flex items-center justify-center"><iconify-icon icon="iconoir:log-out" style="color: white;"></iconify-icon></div>
+            <p class="text-xs text-orange font-semibold">Check Out</p>
+        </a>
+        <div class="flex flex-row w-[30vw] gap-[10px] justify-between items-center">
+            <a href="#" class="flex flex-col items-center">
+                <iconify-icon icon="mdi:form" style="color: #a0a09f;"></iconify-icon>
+                <p class="text-xs text-grey font-light">Form</p>
+            </a>
+            <a href="#" class="flex flex-col items-center">
+                <iconify-icon icon="uil:setting" style="color: #a0a09f;"></iconify-icon>
+                <p class="text-xs text-grey font-light">Setting</p>
+            </a>
+        </div>
+        
+    </footer>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            centeredSlides: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
